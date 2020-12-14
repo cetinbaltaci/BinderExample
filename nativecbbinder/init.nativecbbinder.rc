@@ -1,0 +1,10 @@
+# nativecbbinder
+#on property:dev.bootcomplete=1
+#	start nativecbbinder
+
+service nativecbbinder /system/bin/nativecbbinder
+    class main
+    user root
+    group root system
+    disable
+    seclabel u:r:su:s0
